@@ -1,0 +1,403 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Font-Principal' ;
+    src: url(../assets/fuentes/DMSans-Regular.ttf);
+}
+
+.body-jof{
+    font-family: 'Font-Principal' ;
+    src: url(../assets/fuentes/DMSans-Regular.ttf);
+}
+
+/*Menu Superior*/
+#barra-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF ;
+    padding-left: 240px;
+    padding-right: 240px;
+    border-bottom: 1px solid black;
+}
+
+.Texto-Menu{
+    font-family: 'Font-Principal';
+    text-transform: none;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
+
+.Logo-Menu{
+    height: 80px;
+    padding-left: 20px;
+}
+
+.Contenedor-Texto-Menu{
+    display: inline;
+}
+
+/*Menu Inferior*/
+#menu-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.Texto-Footer{
+    font-family: 'Font-Principal';
+    font-size: 16px;
+    text-transform: none;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.m-foot{
+    padding-bottom: 28px;
+}
+
+.Logo-Footer{
+    height: 80px;
+    fill: #FFFFFF;
+}
+
+.SM-Logo-Footer{
+    height: 64px;
+    padding-left: 24px;
+}
+
+.Menu-Navegacion{
+    /*padding-right: 20px;*/
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.titulo-seccion-home{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 60px;
+}
+
+.subt-sec-trabajos{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.nom-sec-trabajos{
+    font-size: 20px;
+}
+
+/*Seccion Header*/
+.sec-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 320px;
+    padding-bottom: 320px;
+    padding-left: 240px;
+    padding-right: 240px;
+    border-bottom: 1px solid black;
+}
+
+.mensaje-principal:hover{
+    color: white;
+    -webkit-text-stroke: 0.5px #000000;
+    border-bottom: 2px solid #000000;
+    font-size: 38px;
+}
+
+.mensaje-principal:active{
+    color: #000000;
+    border-bottom: #000000;
+    font-size: 40px;
+}
+
+/*Seccion Marcas*/
+.sec-marcas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /*padding-left: 240px;
+    padding-right: 240px;*/
+    border-bottom: 1px solid black;
+}
+
+#brand-innpacto{
+    height: 44px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#brand-umaker{
+    height: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+}
+
+#brand-teca{
+    height: 52px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#brand-labotec{
+    height: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+}
+
+#brand-estrucad{
+    height: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#brand-aoa{
+    height: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.box-brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 48px;
+}
+
+
+
+/*Seccion Trabajos*/
+.sec-trabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 240px;
+    padding-right: 240px;
+    border-bottom: 1px solid black;
+}
+
+.caja-trabajos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#caja-metro{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 36px;
+}
+
+#caja-recetips{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 36px;
+}
+
+#caja-top1{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 36px;
+}
+
+#caja-inn{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 36px;
+}
+
+/*Seccion Contacto*/
+.sec-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+#quieres{
+    font-size: 32px;
+    font-weight: 100;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#contactame a{
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: #000000;
+
+}
+
+/*Pagina Contacto*/
+
+
+.contacto-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+.cont-texto{
+
+}
+
+.cont-form{
+
+}
+
+.label-form{
+    display: block;
+}
+
+
+
+/*Probando CSS Grid*/
+
+.cabecera-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.contenedor-grid{
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid #000000;
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+
+    /*Activamos grid*/
+    display: grid;
+    /*Se definen el # de columnas y ancho*/
+
+    /*grid-template-columns: 300px 200px 300px;*/
+    grid-template-columns: 1fr 2fr 3fr;
+    grid
+
+    /*Se definen el # de filas y alto*/
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 8px;
+    row-gap: 8px;
+
+}
+
+.contenedor-grid > div{
+    background-color: blue;
+    border: #FFFFFF solid;
+    color: green;
+
+}
+
+/*Grid Template Area*/
+.cont-grid-area{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    width: 90%;
+    height: 800px;
+    margin: 40px auto;
+    border: 5px groove gold;
+
+    /*activamos grid*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+
+    /*grid areas*/
+    grid-template-areas:
+    "header header header"
+    "navbar main aside"
+    "navbar main aside"
+    "footer footer footer"
+    ;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1{
+    background-color: chocolate;
+    grid-area: header;
+    /*grid-column: 1/3;*/
+}
+
+.item2{
+    background-color: deeppink;
+    grid-area: navbar;
+}
+
+.item3{
+    background-color: cyan;
+    /*grid-area: main;*/
+    grid-row: 2/4;
+}
+
+.item4{
+    background-color: dimgrey;
+    grid-area: aside;
+}
+
+.item5{
+    background-color: khaki;
+    /*grid-area: footer;*/
+    grid-column: 1/4;
+}
+
+/*Fin de prueba CSS Grid*/
+
+/*Probando Media Queries*/
+@media screen and (max-width: 300px) {
+ 
+    
+}
