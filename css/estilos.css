@@ -13,7 +13,11 @@
     src: url(../assets/fuentes/DMSans-Regular.ttf);
 }
 
+
+/*PAGINA INICIO*/
+
 /*Menu Superior*/
+
 #barra-navegacion{
     display: flex;
     align-items: center;
@@ -24,6 +28,19 @@
     border-bottom: 1px solid black;
 }
 
+.Logo-Menu{
+    height: 80px;
+    padding-left: 20px;
+}
+
+.Menu-Navegacion{
+    /*padding-right: 20px;*/
+}
+
+.Contenedor-Texto-Menu{
+    display: inline;
+}
+
 .Texto-Menu{
     font-family: 'Font-Principal';
     text-transform: none;
@@ -31,19 +48,12 @@
     font-weight: bold;
     text-decoration: none;
     color: black;
-
 }
 
-.Logo-Menu{
-    height: 80px;
-    padding-left: 20px;
-}
-
-.Contenedor-Texto-Menu{
-    display: inline;
-}
+/*Fin Menu Superior*/
 
 /*Menu Inferior*/
+
 #menu-footer{
     display: flex;
     align-items: center;
@@ -53,6 +63,10 @@
     padding-right: 240px;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.m-foot{
+    padding-bottom: 28px;
 }
 
 .Texto-Footer{
@@ -65,10 +79,6 @@
     color: white;
 }
 
-.m-foot{
-    padding-bottom: 28px;
-}
-
 .Logo-Footer{
     height: 80px;
     fill: #FFFFFF;
@@ -79,59 +89,55 @@
     padding-left: 24px;
 }
 
-.Menu-Navegacion{
-    /*padding-right: 20px;*/
+/*Fin Menu Inferior*/
+
+/*Seccion Main Hero*/
+
+@media (min-width: 1200px){
+
+    .sec-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 240px;
+        padding-bottom: 240px;
+        margin-left: 60px;
+        margin-right: 60px;
+        border-bottom: 1px solid black;
+    }
+
+
+    
+    .mensaje-principal{
+        color: #000000;
+        border-bottom: #000000;
+        font-size: 40px;
+    }
 }
 
-h2{
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
-}
+@media (max-width: 600px){
 
-.titulo-seccion-home{
-    font-size: 24px;
-    font-weight: bold;
-    padding-bottom: 60px;
-}
+    .sec-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        border-bottom: 1px solid black;
+    }
 
-.subt-sec-trabajos{
-    font-size: 16px;
-    font-weight: 100;
-}
+    .mensaje-principal{
+        font-size: 30px;
+        position: relative;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
 
-.nom-sec-trabajos{
-    font-size: 20px;
 }
-
-/*Seccion Header*/
-.sec-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 320px;
-    padding-bottom: 320px;
-    padding-left: 240px;
-    padding-right: 240px;
-    border-bottom: 1px solid black;
-}
-
-.mensaje-principal:hover{
-    color: white;
-    -webkit-text-stroke: 0.5px #000000;
-    border-bottom: 2px solid #000000;
-    font-size: 38px;
-}
-
-.mensaje-principal:active{
-    color: #000000;
-    border-bottom: #000000;
-    font-size: 40px;
-}
+/*Fin Seccion Main Hero*/
 
 /*Seccion Marcas*/
+
 .sec-marcas{
     display: flex;
     flex-direction: column;
@@ -142,6 +148,21 @@ h2{
     /*padding-left: 240px;
     padding-right: 240px;*/
     border-bottom: 1px solid black;
+}
+
+.titulo-seccion-home{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.box-brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 48px;
 }
 
 #brand-innpacto{
@@ -182,61 +203,155 @@ h2{
     padding-right: 24px;
 }
 
-.box-brands{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 48px;
+
+@media (min-width: 1200px){
+    .row{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .col{
+    
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
 }
 
+@media (max-width: 600px){
 
+    .container{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-seccion-home{
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .row{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    
+    .col{
+        padding-bottom: 30px;
+    }
+
+    .bra-teca{
+        display: none;
+    }
+
+    .bra-estrucad{
+        display: none;
+    }
+
+}
+
+/*Fin Seccion Marcas*/
 
 /*Seccion Trabajos*/
+
 .sec-trabajos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 240px;
-    padding-right: 240px;
+    padding-bottom: 80px;
+    /*padding-left: 240px;
+    padding-right: 240px;*/
     border-bottom: 1px solid black;
 }
 
-.caja-trabajos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 1200px){
+        
+    .cajas-trabajos{
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .img-caja{
+        height: 360px;
+    }
+
+    .titulo-seccion-home{
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .caja{
+    padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 36px;
+    }
+    
+    .subt-sec-trabajos{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    
+    .nom-sec-trabajos{
+        font-size: 20px;
+    }
 }
 
-#caja-metro{
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 36px;
+@media (max-width: 600px){
+    .cajas-trabajos{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .img-caja{
+        height: 240px;
+    }
+
+    .titulo-seccion-home{
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .caja{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
+    .subt-sec-trabajos{
+        font-size: 14px;
+        font-weight: 100;
+    }
+    
+    .nom-sec-trabajos{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
 }
 
-#caja-recetips{
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 36px;
-}
 
-#caja-top1{
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 36px;
-}
 
-#caja-inn{
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 36px;
-}
+/*Fin Seccion Trabajos*/
 
 /*Seccion Contacto*/
+
 .sec-contacto{
     display: flex;
     flex-direction: row;
@@ -255,7 +370,7 @@ h2{
     padding-right: 24px;
 }
 
-#contactame a{
+#contactame{
     font-size: 32px;
     font-weight: bold;
     padding-left: 24px;
@@ -263,8 +378,23 @@ h2{
     text-decoration: none;
     text-decoration: underline;
     color: #000000;
-
 }
+
+/*Fin Seccion Contacto*/
+
+/*FIN PAGINA INICIO*/
+
+/*-----------------------------------------------------------------*/
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
 
 /*Pagina Contacto*/
 
