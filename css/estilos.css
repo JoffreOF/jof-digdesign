@@ -15,45 +15,43 @@
 
 
 /*PAGINA INICIO*/
-
 /*Menu Superior*/
-
-#barra-navegacion{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFFFFF ;
-    padding-left: 240px;
-    padding-right: 240px;
-    border-bottom: 1px solid black;
+@media (min-width: 1200px){
+    #barra-navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFFFFF ;
+        padding-left: 240px;
+        padding-right: 240px;
+        border-bottom: 1px solid black;
+    }
+    
+    .Logo-Menu{
+        height: 80px;
+        padding-left: 20px;
+    }
+    
+    .Menu-Navegacion{
+        /*padding-right: 20px;*/
+    }
+    
+    .Contenedor-Texto-Menu{
+        display: inline;
+    }
+    
+    .Texto-Menu{
+        font-family: 'Font-Principal';
+        text-transform: none;
+        padding: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }    
 }
-
-.Logo-Menu{
-    height: 80px;
-    padding-left: 20px;
-}
-
-.Menu-Navegacion{
-    /*padding-right: 20px;*/
-}
-
-.Contenedor-Texto-Menu{
-    display: inline;
-}
-
-.Texto-Menu{
-    font-family: 'Font-Principal';
-    text-transform: none;
-    padding: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
-
 /*Fin Menu Superior*/
 
 /*Menu Inferior*/
-
 #menu-footer{
     display: flex;
     align-items: center;
@@ -88,13 +86,10 @@
     height: 64px;
     padding-left: 24px;
 }
-
 /*Fin Menu Inferior*/
 
 /*Seccion Main Hero*/
-
 @media (min-width: 1200px){
-
     .sec-header{
         display: flex;
         flex-direction: row;
@@ -105,8 +100,6 @@
         margin-right: 60px;
         border-bottom: 1px solid black;
     }
-
-
     
     .mensaje-principal{
         color: #000000;
@@ -116,7 +109,6 @@
 }
 
 @media (max-width: 600px){
-
     .sec-header{
         display: flex;
         flex-direction: row;
@@ -132,12 +124,10 @@
         margin-left: 60px;
         margin-right: 60px;
     }
-
 }
 /*Fin Seccion Main Hero*/
 
 /*Seccion Marcas*/
-
 .sec-marcas{
     display: flex;
     flex-direction: column;
@@ -203,7 +193,6 @@
     padding-right: 24px;
 }
 
-
 @media (min-width: 1200px){
     .row{
         display: grid;
@@ -221,7 +210,6 @@
 }
 
 @media (max-width: 600px){
-
     .container{
         display: grid;
         align-items: center;
@@ -253,13 +241,10 @@
     .bra-estrucad{
         display: none;
     }
-
 }
-
 /*Fin Seccion Marcas*/
 
 /*Seccion Trabajos*/
-
 .sec-trabajos{
     display: flex;
     flex-direction: column;
@@ -267,13 +252,10 @@
     align-items: center;
     padding-top: 40px;
     padding-bottom: 80px;
-    /*padding-left: 240px;
-    padding-right: 240px;*/
     border-bottom: 1px solid black;
 }
 
 @media (min-width: 1200px){
-        
     .cajas-trabajos{
             display: grid;
             align-items: center;
@@ -342,45 +324,71 @@
         font-size: 16px;
         font-weight: bold;
     }
-
-
 }
 /*Fin Seccion Trabajos*/
 
 /*Seccion Contacto*/
+@media (min-width: 1200px){
+    .sec-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 240px;
+        padding-right: 240px;
+        border-bottom: 1px solid black;
+    }
 
-.sec-contacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 240px;
-    padding-right: 240px;
+    #quieres{
+        font-size: 32px;
+        font-weight: 100;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+    #contactame{
+        font-size: 32px;
+        font-weight: bold;
+        padding-left: 24px;
+        padding-right: 24px;
+        text-decoration: none;
+        text-decoration: underline;
+        color: #000000;
+    }
 }
 
-#quieres{
-    font-size: 32px;
-    font-weight: 100;
-    padding-left: 24px;
-    padding-right: 24px;
-}
+@media (max-width: 600px){
+    .sec-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-bottom: 1px solid black;
+    }
 
-#contactame{
-    font-size: 32px;
-    font-weight: bold;
-    padding-left: 24px;
-    padding-right: 24px;
-    text-decoration: none;
-    text-decoration: underline;
-    color: #000000;
+    #quieres{
+        font-size: 32px;
+        font-weight: 100;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+    #contactame{
+        font-size: 32px;
+        font-weight: bold;
+        padding-left: 24px;
+        padding-right: 24px;
+        text-decoration: none;
+        text-decoration: underline;
+        color: #000000;
+    }
 }
-
 /*Fin Seccion Contacto*/
-
 /*FIN PAGINA INICIO*/
-
 /*-----------------------------------------------------------------*/
 
 h2{
@@ -390,8 +398,6 @@ h2{
     margin-left: 200px;
     margin-right: 200px;
 }
-
-
 
 /*Pagina Contacto*/
 
