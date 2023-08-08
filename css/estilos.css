@@ -49,43 +49,131 @@
         color: black;
     }    
 }
+
+@media (max-width: 600px){
+    #barra-navegacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF ;
+        border-bottom: 1px solid black;
+    }
+    
+    .Logo-Menu{
+        height: 80px;
+    }
+    
+    .Menu-Navegacion{
+        display: none;
+    }
+    
+    .Contenedor-Texto-Menu{
+        display: inline;
+    }
+    
+    .Texto-Menu{
+        font-family: 'Font-Principal';
+        text-transform: none;
+        padding: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+}
+
 /*Fin Menu Superior*/
 
 /*Menu Inferior*/
-#menu-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000000;
-    padding-left: 240px;
-    padding-right: 240px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+
+@media (min-width: 1200px){
+    .menu-footer{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #000000;
+        padding-left: 240px;
+        padding-right: 240px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .m-foot{
+        padding-bottom: 28px;
+    }
+    
+    .Texto-Footer{
+        font-family: 'Font-Principal';
+        font-size: 16px;
+        text-transform: none;
+        padding: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .Logo-Footer{
+        height: 80px;
+        fill: #FFFFFF;
+    }
+    
+    .SM-Logo-Footer{
+        height: 64px;
+        padding-left: 24px;
+    }
 }
 
-.m-foot{
-    padding-bottom: 28px;
+@media (max-width: 600px){
+    .menu-footer{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: #000000;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .m-foot{
+        padding-bottom: 12px;
+    }
+    
+    .Texto-Footer{
+        font-family: 'Font-Principal';
+        font-size: 16px;
+        text-transform: none;
+        padding: 0px 20px 0px 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .Logo-Footer{
+        height: 80px;
+        fill: #FFFFFF;
+    }
+    
+    .SM-Logo-Footer{
+        height: 48px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .enlaces-footer{
+        order: 2;
+    }
+
+    .logotipo-footer{
+        order: 1;
+        padding-bottom: 10px;
+    }
+
+    .rrss-footer{
+        order: 3;
+    }
 }
 
-.Texto-Footer{
-    font-family: 'Font-Principal';
-    font-size: 16px;
-    text-transform: none;
-    padding: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-
-.Logo-Footer{
-    height: 80px;
-    fill: #FFFFFF;
-}
-
-.SM-Logo-Footer{
-    height: 64px;
-    padding-left: 24px;
-}
 /*Fin Menu Inferior*/
 
 /*Seccion Main Hero*/
@@ -353,8 +441,7 @@
         padding-left: 24px;
         padding-right: 24px;
         text-decoration: none;
-        text-decoration: underline;
-        color: #000000;
+        color: black;
     }
 }
 
@@ -363,8 +450,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 80px;
+        padding-bottom: 80px;
         padding-left: 40px;
         padding-right: 40px;
         border-bottom: 1px solid black;
@@ -375,6 +462,7 @@
         font-weight: 100;
         padding-left: 24px;
         padding-right: 24px;
+        padding-bottom: 10px;
     }
     
     #contactame{
