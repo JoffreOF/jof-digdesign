@@ -22,6 +22,14 @@
   src: url(../assets/fuentes/DMSans-Regular.ttf);
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
 /*Fin CSS General*/
 /*-----------------------------------------------------------------*/
 /*PAGINA INICIO*/
@@ -436,15 +444,20 @@
 /*Fin Seccion Contacto*/
 /*FIN PAGINA INICIO*/
 /*-----------------------------------------------------------------*/
-h2 {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-/*Pagina Contacto*/
+/*-----------------------------------------------------------------*/
+/*PAGINA SERVICIOS*/
+/*FIN PAGINA SERVICIOS*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*PAGINA PORTAFOLIO*/
+/*FIN PAGINA PORTAFOLIO*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*PAGINA SOBRE MÍ*/
+/*FIN PAGINA SOBRE MÍ*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*PAGINA CONTACTO*/
 .contacto-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -458,6 +471,8 @@ h2 {
   display: block;
 }
 
+/*FIN PAGINA CONTACTO*/
+/*-----------------------------------------------------------------*/
 /* Página Sobre Mi */
 /* .head-joffre{
     height: 300px;
