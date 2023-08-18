@@ -1,14 +1,9 @@
 /*Variables*/
-$color-primario: #00A7E1;
-$color-secundario: #003459;
-$borde-inferior: 1px solid black;
+$color-primario: #ffffff;
+$color-secundario: #212529;
+$borde-inferior: 1px solid #212529;
+$peso-fuente: 300;
 /*Fin-Variables*/
-
-.head{
-    color: $color-primario;
-    background-color: $color-secundario;
-    text-align: center;
-}
 
 /*CSS General*/
 *{
@@ -83,13 +78,3 @@ h2{
 
 /*FIN PAGINA CONTACTO*/
 /*-----------------------------------------------------------------*/
-
-
-
-/* Página Sobre Mi */
-
-/* .head-joffre{
-    height: 300px;
-} */
-
-/* Fin Página Sobre Mi */

@@ -13,32 +13,33 @@
 </head>
 <body class="body-jof">
     <!-- BS Nav bar Desktop -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-md-2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../assets/Isotipo-jof.svg" alt="jof-Digital Design" width="70" height="70">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../paginas/portafolio.html">Portafolio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../paginas/sobre-mi.html">Sobre mí</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
-                </li>
-            </ul>
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" href="../paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" href="../paginas/portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" href="#">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -70,37 +71,62 @@
             <div class="col">
                 <img src="../assets/foto/Head-JoffreOrdinola.jpg" class="img-fluid head-joffre" alt="Joffre-Head">
             </div>
-
-
         </div>
         
     </div>
     <!-- Fin BS Text -->
 
-    <!-- BS Section Contacto -->
-    <div class="container d-flex justify-content-center mt-4 mb-4 p-4">
-            <h3>¿Quieres que trabajemos juntos?</h3>
-            <button type="button" class="btn btn-light">Contáctame aquí</button>
-    </div>
-    <!-- Fin BS Section Contacto -->
-
-    <!-- BS Footer Nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/Isotipo-jof-neg.svg" alt="jof-Digital Design" width="70" height="70">
-            </a>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <span class="navbar-text me-auto">
-            2023 © jof, todos los derechos reservados.
-            </span>
+    <!-- Seccion que redirige a contacto -->
+    <section class="sec-contacto">
+        <div class="quieres-contacto">
+            <div>
+                <h3 id="quieres">¿Quieres que trabajemos juntos?</h3>
+            </div>
+            <div id="boton-contacto-home">
+                <h3 id="boton-ct"><a href="../paginas/contacto.html" id="contactame">Contáctame aquí</a></h3>
+            </div>
         </div>
-        </div>
-    </nav>
+    </section>
 
-    <!-- Fin BS Footer Nav -->
+    <!-- Menu Footer -->
+    <footer>
+        <nav class="menu-footer">
+            <div class="enlaces-footer">
+                <ul class="Lista-Footer">
+                    <li class="Box-Footer">
+                        <a class="Texto-Footer" href="../paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="Box-Footer">
+                        <a class="Texto-Footer" href="../paginas/portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="Box-Footer">
+                        <a class="Texto-Footer" href="#">Sobre mí</a>
+                    </li>
+                    <li class="Box-Footer">
+                        <a class="Texto-Footer" href="../paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+           
+            <div class="logotipo-footer">
+                <a href="../index.html">
+                    <img src="../assets/Isotipo-jof-neg.svg" alt="Isotipo jof" class="Logo-Footer">
+                </a>                
+            </div>
+
+            <div class="rrss-footer">
+                <a href="https://www.behance.net/joffreordinola">
+                    <img src="../assets/rrss/Behance.svg" alt="Mi Behance" class="SM-Logo-Footer">
+                </a>
+                <a href="https://www.linkedin.com/in/jordinolaflores/">
+                    <img src="../assets/rrss/Linkedin.svg" alt="Mi Linkedin" class="SM-Logo-Footer">
+                </a>                
+            </div>
+        </nav>
+    </footer>
+    <!-- Fin Menu Footer -->
 
     <!-- Bootstrap JS -->
-    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>

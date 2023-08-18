@@ -3,48 +3,47 @@
 <head class="head-jof">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta description SEO -->
-    <meta name="description" content="Diseño digital, experiencia de usuario y accesibilidad">
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/Isotipo-jof.svg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <!-- Hoja de estilo CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
     <title>jof - Inicio</title>
 </head>
 <body class="body-jof">
-    <!-- Menu Header -->
-    <nav id="barra-navegacion">
-        <div class="Logo-Navegacion">
-            <a href="./index.html">
-                <img src="./assets/Isotipo-jof.svg" alt="Isotipo jof" class="Logo-Menu">
-            </a>            
-        </div>
-
-        <div class="Menu-Navegacion">
-            <ol>
-                <li class="Contenedor-Texto-Menu">
-                    <a href="#" class="Texto-Menu">Inicio</a>
-                </li>
-                    
-                <li class="Contenedor-Texto-Menu">
-                    <a href="./paginas/servicios.html" class="Texto-Menu">Servicios</a>
-                </li>
-    
-                <li class="Contenedor-Texto-Menu">
-                    <a href="./paginas/portafolio.html" class="Texto-Menu">Portafolio</a>
-                </li>
-    
-                <li class="Contenedor-Texto-Menu">
-                    <a href="./paginas/sobre-mi.html" class="Texto-Menu">Sobre mí</a>
-                </li>
-    
-                <li class="Contenedor-Texto-Menu">
-                    <a href="./paginas/contacto.html" class="Texto-Menu">Contacto</a>
-                </li>
-            </ol>
+    <!-- BS Nav bar Desktop -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-md-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/Isotipo-jof.svg" alt="jof-Digital Design" width="70" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" href="./paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" href="./paginas/portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" href="./paginas/sobre-mi.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Texto-Menu nav-link" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+    <!-- Fin BS Nav bar Desktop -->
 
     <section class="sec-header">
         <div class="container">
@@ -57,7 +56,7 @@
             <div>
                 <h3 class="titulo-seccion-home">Algunas marcas con las que he trabajado</h3>
             </div>
-            <div class="row">
+            <div class="row-marcas">
                 <div class="col bra-innpacto">
                     <img src="./assets/Marcas/Innpacto.svg" alt="Innpacto" id="brand-innpacto">
                 </div>
@@ -117,8 +116,12 @@
     <!-- Seccion que redirige a contacto -->
     <section class="sec-contacto">
         <div class="quieres-contacto">
-            <h3 id="quieres">¿Quieres que trabajemos juntos?</h3>
-            <h3 id="contactame" ><a href="./paginas/contacto.html">Contáctame aquí</a></h3>
+            <div>
+                <h3 id="quieres">¿Quieres que trabajemos juntos?</h3>
+            </div>
+            <div id="boton-contacto-home">
+                <h3 id="boton-ct"><a href="./paginas/contacto.html" id="contactame">Contáctame aquí</a></h3>
+            </div>
         </div>
     </section>
     
@@ -153,6 +156,9 @@
             </div>
         </nav>
     </footer>
+    <!-- Fin Menu Footer -->
 
+    <!-- Bootstrap JS -->
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>
