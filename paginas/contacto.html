@@ -52,34 +52,34 @@
     <!-- Fin BS Header Title -->
 
     <section class="contacto-grid">
-        <section class="cont-texto">
-            <h3>¿Listo para hablar de tus necesidades de diseño?</h3>
-            <p>Llena el formulario para enviarme un mensaje y te responderé pronto.</p>
-        </section>
+        <div class="cont-texto">
+            <div class="contac1">
+                <h3 id="titulo-contacto">¿Listo para hablar de tus necesidades de diseño?</h3>
+            </div>
+            <div class="contact2">
+                <p id="subt-contacto">Llena el formulario para enviarme un mensaje y te responderé pronto.</p>
+            </div>
+        </div>
     
-        <section class="cont-form">
+        <div class="cont-form">
             <form action="datos.php" method="post">
-    
                 <div>
                     <label for="nombre" class="label-form">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="text" class="placetext" name="nombre" placeholder="Tu nombre" required>
                 </div>
-                
                 <div>
                     <label for="email" class="label-form">Correo:</label>
-                    <input type="email" name="email" placeholder="Tu correo" required>
+                    <input type="email" class="placetext" name="email" placeholder="Tu correo" required>
                 </div>
-                
                 <div>
                     <label for="input" class="label-form">Mensaje:</label>
-                    <input type="text" name="input" placeholder="Escribe tu mensaje aquí" required>
+                    <input type="text" class="placetext" name="input" placeholder="Escribe tu mensaje aquí" required>
                 </div>
-                    
                 <div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="boton-envio">Enviar</button>
                 </div>
             </form>
-        </section>    
+        </div>    
     </section>
     
     <!-- Menu Footer -->

@@ -200,10 +200,10 @@
 @media (min-width: 1200px){
     .sec-header{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        padding-top: 240px;
-        padding-bottom: 240px;
+        align-items: center;
+        height: 90vh;
         padding-left: 60px;
         padding-right: 60px;
         border-bottom: 1px solid black;
@@ -220,15 +220,16 @@
 @media (max-width: 600px){
     .sec-header{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        align-items: center;
+        height: 90vh;
         border-bottom: 1px solid black;
     }
 
     .mensaje-principal{
         font-size: 30px;
+        font-weight: 300;
         position: relative;
         margin-left: 60px;
         margin-right: 60px;
@@ -242,10 +243,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    /*padding-left: 240px;
-    padding-right: 240px;*/
+    height: 60vh;
     border-bottom: 1px solid black;
 }
 
@@ -319,6 +317,10 @@
 }
 
 @media (max-width: 600px){
+
+    .sec-marcas{
+        height: 80vh;
+    }
     .container{
         display: grid;
         align-items: center;
@@ -366,10 +368,10 @@
 
 @media (min-width: 1200px){
     .cajas-trabajos{
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            grid-template-columns: 1fr 1fr;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
         
     }
 
@@ -445,8 +447,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        height: 40vh;
         padding-left: 240px;
         padding-right: 240px;
         border-bottom: 1px solid black;
@@ -500,8 +501,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        height: 40vh;
         padding-left: 40px;
         padding-right: 40px;
         border-bottom: 1px solid black;
