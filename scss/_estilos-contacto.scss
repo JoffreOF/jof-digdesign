@@ -1,62 +1,195 @@
-
-
-.contacto-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 60px;
-    padding-bottom: 180px;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: auto;
+@media (min-width: 1024px){
+    .contacto-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 60px;
+        padding-bottom: 180px;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: auto;
+    }
+    
+    .cont-texto{
+        width: 80%;
+        margin-left: 36px;
+    }
+    
+    .cont-form{
+        width: 90%;
+    }
+    
+    #titulo-contacto{
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    
+    #subt-contacto{
+        font-size: 20px;
+    }
+    
+    .label-form{
+        display: block;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .placetext{
+        display: flex;
+        font-size: 18px;
+        width: 100%;
+        border-width: 1px;
+        border-color: $color-secundario;
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 22px;
+    }
+    
+    .boton-envio{
+        width: 100%;
+        padding: 16px;
+        margin-top: 24px;
+        border-width: 1px;
+        border-color: $color-secundario;
+        border-radius: 12px;
+        background-color: $color-secundario;
+        color: $color-primario;
+        font-size: 18px;
+    }
+    
+    .boton-envio:hover{
+        background-color: $color-hover;
+    }
 }
 
-.cont-texto{
-    width: 80%;
-    margin-left: 36px;
+@media (min-width: 768px) and (max-width: 1024px){
+    .contacto-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        justify-items: center;
+        align-items: center;
+        max-width: 1300px;
+        margin: auto;
+        gap: 48px;
+    }
+    
+    .cont-texto{
+        width: 80%;
+    }
+    
+    .cont-form{
+        width: 90%;
+    }
+    
+    #titulo-contacto{
+        font-size: 40px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    
+    #subt-contacto{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .label-form{
+        display: block;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .placetext{
+        display: flex;
+        font-size: 18px;
+        width: 100%;
+        border-width: 1px;
+        border-color: $color-secundario;
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 22px;
+    }
+    
+    .boton-envio{
+        width: 100%;
+        padding: 16px;
+        margin-top: 24px;
+        border-width: 1px;
+        border-color: $color-secundario;
+        border-radius: 12px;
+        background-color: $color-secundario;
+        color: $color-primario;
+        font-size: 18px;
+    }
+    
+    .boton-envio:hover{
+        background-color: $color-hover;
+    }
 }
 
-.cont-form{
-    width: 90%;
+@media (max-width: 767px){
+    .contacto-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        justify-items: center;
+        align-items: center;
+        max-width: 1300px;
+        margin: auto;
+        gap: 48px;
+    }
+    
+    .cont-texto{
+        width: 80%;
+    }
+    
+    .cont-form{
+        width: 90%;
+    }
+    
+    #titulo-contacto{
+        font-size: 36px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    
+    #subt-contacto{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .label-form{
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .placetext{
+        display: flex;
+        font-size: 16px;
+        width: 100%;
+        border-width: 1px;
+        border-color: $color-secundario;
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 22px;
+    }
+    
+    .boton-envio{
+        width: 100%;
+        padding: 16px;
+        margin-top: 24px;
+        border-width: 1px;
+        border-color: $color-secundario;
+        border-radius: 12px;
+        background-color: $color-secundario;
+        color: $color-primario;
+        font-size: 18px;
+    }
+    
+    .boton-envio:hover{
+        background-color: $color-hover;
+    }
 }
 
-#titulo-contacto{
-    font-size: 40px;
-    margin-bottom: 24px;
-}
-
-#subt-contacto{
-    font-size: 20px;
-}
-
-.label-form{
-    display: block;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.placetext{
-    display: flex;
-    font-size: 18px;
-    width: 100%;
-    border-width: 1px;
-    border-color: $color-secundario;
-    border-radius: 12px;
-    padding: 12px;
-    margin-bottom: 22px;
-}
-
-.boton-envio{
-    width: 100%;
-    padding: 16px;
-    margin-top: 24px;
-    border-width: 1px;
-    border-color: $color-secundario;
-    border-radius: 12px;
-    background-color: $color-secundario;
-    color: $color-primario;
-    font-size: 18px;
-}
-
-.boton-envio:hover{
-    background-color: $color-hover;
-}

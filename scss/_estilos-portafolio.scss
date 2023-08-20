@@ -1,81 +1,264 @@
-.portafolio-grid{
-    padding-top: 20px;
-    padding-bottom: 80px;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: auto;
+@media (min-width: 1024px){
+    .portafolio-grid{
+        padding-top: 20px;
+        padding-bottom: 80px;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: auto;
+    }
+    
+    .descripcion-portf{
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 120px;
+    }
+    
+    .titulo-port{
+        text-align: center;
+        line-height: 36px;
+    }
+    
+    .trabajos-portf{
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 16px 0px 16px;
+        gap: 48px;
+    }
+    
+    .caja-marca{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        border: 1px solid $color-secundario;
+    }
+
+    .caja-marca:hover{
+        transform: translate(0px,-10px);
+        transition: 0.5s;
+    }
+    
+    .descrip-marca{
+        margin-left: 60px;
+        margin-right: 80px;
+    }
+    
+    .serv-titulo{
+        font-size: 24px;
+    }
+    
+    .cliente-titulo{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .descrip-titulo{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .Link-marca{
+        text-decoration: none;
+        font-size: 19px;
+        color: $color-secundario;
+        text-decoration-line: underline;
+    }
+    
+    .Link-marca:hover{
+        text-decoration: none;
+    }
+    
+    .img-marca{
+        position: relative;
+        width: 650px;
+    }
+    
+    .marca-port{
+        width: 100%;
+        height: auto;
+    }
 }
 
-.descripcion-portf{
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 120px;
+@media (min-width: 768px) and (max-width: 1024px){
+    .portafolio-grid{
+        padding-top: 20px;
+        padding-bottom: 80px;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: auto;
+    }
+    
+    .descripcion-portf{
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-bottom: 120px;
+    }
+    
+    .titulo-port{
+        text-align: center;
+        line-height: 36px;
+    }
+    
+    .trabajos-portf{
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 12px 0px 12px;
+        gap: 48px;
+    }
+    
+    .caja-marca{
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $color-secundario;
+    }
+    
+    .descrip-marca{
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+    
+    .serv-titulo{
+        font-size: 22px;
+        margin-top: 16px;
+    }
+    
+    .cliente-titulo{
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+    
+    .descrip-titulo{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .Link-marca{
+        text-decoration: none;
+        font-size: 17px;
+        color: $color-secundario;
+        text-decoration-line: underline;
+    }
+    
+    .Link-marca:hover{
+        text-decoration: none;
+    }
+    
+    .img-marca{
+        position: relative;
+        object-fit: scale-down;
+    }
+    
+    .marca-port{
+        width: 100%;
+        height: auto;
+    }
 }
 
-.titulo-serv{
-    text-align: center;
+@media (max-width: 767px){
+    .portafolio-grid{
+        padding-top: 0px;
+        padding-bottom: 10px;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .descripcion-portf{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .titulo-port{
+        text-align: center;
+        line-height: 32px;
+        font-size: 20px;
+    }
+    
+    .trabajos-portf{
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        gap: 40px;
+    }
+    
+    .caja-marca{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 20px 0px 20px;
+        border: 1px solid $color-secundario;
+    }
+
+    .caja-marca:hover{
+        transform: translate(0px,-20px);
+    }
+    
+    .descrip-marca{
+        order: 2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .serv-titulo{
+        font-size: 20px;
+    }
+    
+    .cliente-titulo{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    
+    .descrip-titulo{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .Link-marca{
+        text-decoration: none;
+        font-size: 16px;
+        color: $color-secundario;
+        text-decoration-line: underline;
+    }
+    
+    .Link-marca:hover{
+        text-decoration: none;
+    }
+    
+    .img-marca{
+        order: 1;
+        position: relative;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+    .marca-port{
+        width: 100%;
+        height: auto;
+    }
 }
 
-.trabajos-portf{
-    display: flex;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    gap: 48px;
-}
-
-.caja-marca{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    border: 1px solid $color-secundario;
-}
-
-.descrip-marca{
-    margin-left: 60px;
-    margin-right: 80px;
-}
-
-.serv-titulo{
-    font-size: 24px;
-}
-
-.cliente-titulo{
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.descrip-titulo{
-    font-size: 18px;
-    line-height: 28px;
-}
-
-.Link-marca{
-    text-decoration: none;
-    font-size: 19px;
-    color: $color-secundario;
-    text-decoration-line: underline;
-}
-
-.Link-marca:hover{
-    text-decoration: none;
-}
-
-.img-marca{
-    position: relative;
-    width: 650px;
-}
-
-.marca-port{
-    width: 100%;
-    height: auto;
-}
 
 
