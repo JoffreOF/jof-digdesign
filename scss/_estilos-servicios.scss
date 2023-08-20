@@ -1,0 +1,85 @@
+.servicios-grid{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.lista-descr{
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    justify-content: space-between;
+    margin: auto;
+    gap: 80px;
+}
+
+.descripcion-serv{
+    display: flex;
+    align-items: center;
+}
+
+.lista-serv{
+    margin-left: 80px;
+}
+
+.titulo-serv{
+    line-height: 36px;
+}
+
+.subt-serv{
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.item-list-serv{
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.servicios-ejemplos{
+    padding-top: 20px;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1300px;
+}
+
+.ejem-serv-col{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    gap: 60px;
+}
+
+.ejem-box{
+    border: 1px solid $color-secundario;
+}
+
+.s-ejem-img{
+    position: relative;
+    width: 700px;
+}
+
+.s-ejem-img:hover{
+    width: 680px;
+    transition: all 0.3s;
+}
+
+.img-serv{
+    width: 100%;
+    height: auto;
+}
+
+.s-ejem-title{
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 2px;
+    margin-left: 24px;
+}
+
+.s-ejem-subt{
+    font-size: 20px;
+    margin-left: 24px;
+}

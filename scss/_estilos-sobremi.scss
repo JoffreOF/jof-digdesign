@@ -1,0 +1,44 @@
+.sobre-mi-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    gap: 80px;
+}
+
+.sobremi-bio{
+    display: flex;
+    align-items: center;
+
+}
+
+.sobremi-img{
+}
+
+.head-bio{
+    font-size: 52px;
+    margin-bottom: 36px;
+    
+}
+
+.texto-bio{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.bt-curr-texto{
+    margin-top: 18px;
+    text-decoration: none;
+    font-size: 17px;
+    color: $color-secundario;
+    text-decoration-line: underline;
+}
+
+.bt-curr-texto:hover{
+    text-decoration: none;
+}
+
+    

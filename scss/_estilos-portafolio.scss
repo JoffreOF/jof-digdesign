@@ -1,0 +1,81 @@
+.portafolio-grid{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.descripcion-portf{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 120px;
+}
+
+.titulo-serv{
+    text-align: center;
+}
+
+.trabajos-portf{
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 48px;
+}
+
+.caja-marca{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border: 1px solid $color-secundario;
+}
+
+.descrip-marca{
+    margin-left: 60px;
+    margin-right: 80px;
+}
+
+.serv-titulo{
+    font-size: 24px;
+}
+
+.cliente-titulo{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.descrip-titulo{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.Link-marca{
+    text-decoration: none;
+    font-size: 19px;
+    color: $color-secundario;
+    text-decoration-line: underline;
+}
+
+.Link-marca:hover{
+    text-decoration: none;
+}
+
+.img-marca{
+    position: relative;
+    width: 650px;
+}
+
+.marca-port{
+    width: 100%;
+    height: auto;
+}
+
+
