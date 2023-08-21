@@ -604,7 +604,8 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .sec-trabajos{
-        max-width: 1100px;
+        max-width: 1300px;
+        justify-content: space-between;
         margin: auto;
         padding-top: 40px;
         border-bottom: 1px solid black;
@@ -614,6 +615,7 @@
     .cajas-trabajos{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
         gap: 24px;
         margin: 0px 20px 0px 20px;
     }
@@ -655,16 +657,17 @@
 
     .sec-trabajos{
         max-width: 900px;
+        justify-content: space-between;
         margin: auto;
         padding-top: 40px;
         padding-bottom: 36px;
         border-bottom: 1px solid black;
-        
     }
 
     .cajas-trabajos{
         display: grid;
         grid-template-columns: 1fr;
+        justify-content: space-between;
         gap: 24px;
         margin: 0px 20px 0px 20px;
     }
@@ -681,13 +684,13 @@
 
     .Miniatura-Caja{
         position: relative;
-        height: 240px;
+        width: 100%;
         margin-bottom: 14px;
     }
 
     .img-caja{
-        height: 100%;
-        width: auto;
+        width: 100%;
+        height: auto;
     }
 
     .subt-sec-trabajos{
