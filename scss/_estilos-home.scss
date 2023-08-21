@@ -545,32 +545,32 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
-        padding-bottom: 80px;
-        margin: 0px;
+        height: auto;
         border-bottom: 1px solid black;
     }
 
     .trabajos-seccion{
         max-width: 1300px;
         margin: auto;
+        margin-top: 60px;
+        margin-bottom: 40px;
     }
 
     .cajas-trabajos{
         display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-items: center;
-        grid-template-columns: 1fr 1fr;
-        text-decoration: none;
         gap: 36px;
         margin-left: 36px;
         margin-right: 36px;
-        
+        display: grid;
+        width: 100%;        
     }
 
     .Miniatura-Caja{
         position: relative;
-        widtht: 360px;
+        width: 100%;
         margin-bottom: 12px;
     }
 
@@ -604,10 +604,8 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .sec-trabajos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        max-width: 1100px;
+        margin: auto;
         padding-top: 40px;
         border-bottom: 1px solid black;
         padding-bottom: 80px;        
@@ -615,10 +613,7 @@
     
     .cajas-trabajos{
         display: grid;
-        align-items: center;
-        justify-items: center;
         grid-template-columns: 1fr 1fr;
-        text-decoration: none;
         gap: 24px;
         margin: 0px 20px 0px 20px;
     }
@@ -659,21 +654,19 @@
 @media (max-width: 767px){
 
     .sec-trabajos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        max-width: 900px;
+        margin: auto;
         padding-top: 40px;
-        border-bottom: 1px solid black;
         padding-bottom: 36px;
+        border-bottom: 1px solid black;
+        
     }
 
     .cajas-trabajos{
         display: grid;
-        align-items: center;
-        justify-items: center;
         grid-template-columns: 1fr;
         gap: 24px;
+        margin: 0px 20px 0px 20px;
     }
 
     .home-trabajos-titulo{
