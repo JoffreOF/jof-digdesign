@@ -7,9 +7,13 @@
     <link rel="shortcut icon" href="../assets/Isotipo-jof.svg" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!-- Animaciones AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Hoja de estilo CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>jof - Portafolio</title>
+    <meta name="description" content="Hecha un vistazo a algunos de mis trabajos con otras marcas, desde Rediseño Web a creación de logotipos.">
+    <meta name="keywords" content="Diseño UX UI, Diseño UX, Diseño UI, Experiencia de Usuario, Interfaz de Usuario, Desarrollo Web, Branding, Diseño Digital, Diseño Gráfico, Creación de Webs">
 </head>
 <body class="body-jof">
     <!-- BS Nav bar Desktop -->
@@ -66,7 +70,9 @@
                     </a>
                 </div>
                 <div class="img-marca">
-                    <img class="marca-port" src="../assets/miniat/Min-Metropolitano.jpg" alt="Metropolitano">
+                    <a href="https://www.behance.net/gallery/158830487/Metropolitano-Web-Redesign" target="_blank">
+                        <img class="marca-port" src="../assets/miniat/Min-Metropolitano.jpg" alt="Metropolitano">
+                    </a>                    
                 </div>
             </div>
 
@@ -80,21 +86,25 @@
                     </a>
                 </div>
                 <div class="img-marca">
-                    <img class="marca-port" src="../assets/miniat/Min-Recetips.jpg" alt="Recetips">
+                    <a href="https://www.behance.net/gallery/146717677/Recetips-UXUI-Design" target="_blank">
+                        <img class="marca-port" src="../assets/miniat/Min-Recetips.jpg" alt="Recetips">
+                    </a>                    
                 </div>
             </div>
-
+            
             <div class="caja-marca">
                 <div class="descrip-marca">
                     <h5 class="serv-titulo">Branding</h5>
                     <h6 class="cliente-titulo">Academias Top 1</h6>
                     <p class="descrip-titulo">Relanzamiento de unos de las academias más importantes del interior del país</p>
-                    <a class="Link-marca" href="https://www.behance.net/gallery/158830487/Metropolitano-Web-Redesign" target="_blank">
+                    <a class="Link-marca" href="https://www.behance.net/gallery/102300393/Academias-Top-1-Rebranding" target="_blank">
                         <p>Ver más</p>
                     </a>
                 </div>
                 <div class="img-marca">
-                    <img class="marca-port" src="../assets/miniat/Min-Top1.jpg" alt="Top 1">
+                    <a href="https://www.behance.net/gallery/102300393/Academias-Top-1-Rebranding" target="_blank">
+                        <img class="marca-port" src="../assets/miniat/Min-Top1.jpg" alt="Top 1">
+                    </a>                    
                 </div>
             </div>
 
@@ -103,19 +113,18 @@
                     <h5 class="serv-titulo">Diseño de Slides</h5>
                     <h6 class="cliente-titulo">Innpacto</h6>
                     <p class="descrip-titulo">Diseño de diapositivas para usarse en presentaciones oficiales con clientes e inversores</p>
-                    <a class="Link-marca" href="https://www.behance.net/gallery/158830487/Metropolitano-Web-Redesign" target="_blank">
+                    <a class="Link-marca" href="https://www.behance.net/gallery/131405463/Diseno-de-diapositivas" target="_blank">
                         <p>Ver más</p>
                     </a>
                 </div>
                 <div class="img-marca">
-                    <img class="marca-port" src="../assets/miniat/Min-Innpacto.jpg" alt="Innpacto">
+                    <a href="https://www.behance.net/gallery/131405463/Diseno-de-diapositivas" target="_blank">
+                        <img class="marca-port" src="../assets/miniat/Min-Innpacto.jpg" alt="Innpacto">
+                    </a>                    
                 </div>
             </div>
         </div>
-
     </section>
-
-
 
     <!-- Seccion que redirige a contacto -->
     <section class="sec-contacto">
@@ -154,14 +163,17 @@
                     <img src="../assets/Isotipo-jof-neg.svg" alt="Isotipo jof" class="Logo-Footer">
                 </a>                
             </div>
-
             <div class="rrss-footer">
-                <a href="https://www.behance.net/joffreordinola" target="_blank">
-                    <img src="../assets/rrss/Behance.svg" alt="Mi Behance" class="SM-Logo-Footer">
-                </a>
-                <a href="https://www.linkedin.com/in/jordinolaflores/" target="_blank">
-                    <img src="../assets/rrss/Linkedin.svg" alt="Mi Linkedin" class="SM-Logo-Footer">
-                </a>                
+                    <a href="https://www.behance.net/joffreordinola" target="_blank">
+                        <div class="BoxSocial-Behance">
+                            <img src="../assets/rrss/jof-Behance.svg" alt="Mi Behance" id="jof-Behance">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jordinolaflores/" target="_blank">
+                        <div class="BoxSocial-Linkedin">
+                            <img src="../assets/rrss/jof-Linkedin.svg" alt="Mi Linkedin" id="jof-Linkedin">
+                        </div>
+                    </a>                                
             </div>
         </nav>
     </footer>
@@ -169,5 +181,10 @@
 
     <!-- Bootstrap JS -->
     <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
+    <!-- Animacion AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

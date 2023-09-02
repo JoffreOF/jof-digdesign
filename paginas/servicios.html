@@ -7,9 +7,13 @@
     <link rel="shortcut icon" href="../assets/Isotipo-jof.svg" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!-- Animaciones AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Hoja de estilo CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>jof - Servicios</title>
+    <meta name="description" content="Ofrezco una amplia gama de servicios personalizados para ayudarte a alcanzar tus objetivos. Diseño Web. UX Research. Branding. UX UI.">
+    <meta name="keywords" content="Diseño UX UI, Diseño UX, Diseño UI, Experiencia de Usuario, Interfaz de Usuario, Desarrollo Web, Branding, Diseño Digital, Diseño Gráfico, Creación de Webs">
 </head>
 <body class="body-jof">
     <!-- BS Nav bar Desktop -->
@@ -72,21 +76,21 @@
 
     <section class="servicios-ejemplos">
         <div class="ejem-serv-col">
-            <div class="ejem-box">
+            <div class="ejem-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="s-ejem-img">
                     <img class="img-serv" src="../assets/servicios/DesarrolloWeb.webp" alt="Rediseño Web">
                 </div>                
                 <h4 class="s-ejem-title">Desarrollo Web</h4>
                 <p class="s-ejem-subt">Creación de sitios web funcionales y accesibles.</p>
             </div>
-            <div class="ejem-box">
+            <div class="ejem-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="s-ejem-img">
                     <img class="img-serv" src="../assets/servicios/PrototipadoApp.webp" alt="Prototipado App">
                 </div>                
                 <h4 class="s-ejem-title">Prototipado de Apps</h4>
                 <p class="s-ejem-subt">Diseño conceptual previo para aplicaciones eficientes.</p>
             </div>
-            <div class="ejem-box">
+            <div class="ejem-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="s-ejem-img">
                     <img class="img-serv" src="../assets/servicios/Branding.webp" alt="Rebranding">
                 </div>                
@@ -94,7 +98,7 @@
                 <p class="s-ejem-subt">Construcción de identidad visual y percepción.</p>
                 
             </div>
-            <div class="ejem-box">
+            <div class="ejem-box" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="s-ejem-img">
                     <img class="img-serv" src="../assets/servicios/Presentacion.webp" alt="Diseño de Slides">
                 </div>                
@@ -144,14 +148,17 @@
                     <img src="../assets/Isotipo-jof-neg.svg" alt="Isotipo jof" class="Logo-Footer">
                 </a>                
             </div>
-
             <div class="rrss-footer">
-                <a href="https://www.behance.net/joffreordinola" target="_blank">
-                    <img src="../assets/rrss/Behance.svg" alt="Mi Behance" class="SM-Logo-Footer">
-                </a>
-                <a href="https://www.linkedin.com/in/jordinolaflores/" target="_blank">
-                    <img src="../assets/rrss/Linkedin.svg" alt="Mi Linkedin" class="SM-Logo-Footer">
-                </a>                
+                    <a href="https://www.behance.net/joffreordinola" target="_blank">
+                        <div class="BoxSocial-Behance">
+                            <img src="../assets/rrss/jof-Behance.svg" alt="Mi Behance" id="jof-Behance">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jordinolaflores/" target="_blank">
+                        <div class="BoxSocial-Linkedin">
+                            <img src="../assets/rrss/jof-Linkedin.svg" alt="Mi Linkedin" id="jof-Linkedin">
+                        </div>
+                    </a>                                
             </div>
         </nav>
     </footer>
@@ -159,5 +166,10 @@
 
     <!-- Bootstrap JS -->
     <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
+    <!-- Animacion AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

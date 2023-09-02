@@ -40,11 +40,7 @@ h2 {
     color: #212529;
   }
   .Texto-Menu:hover {
-    font-family: "Font-Principal";
-    text-transform: none;
-    font-weight: medium;
     text-decoration: underline;
-    color: #212529;
   }
   .navbar-brand {
     padding: 0px;
@@ -61,7 +57,7 @@ h2 {
     text-decoration: none;
     color: #212529;
     text-align: right;
-    font-size: 18px;
+    font-size: 16px;
   }
   .Texto-Menu:hover {
     text-decoration: underline;
@@ -85,7 +81,7 @@ h2 {
     text-decoration: none;
     color: #212529;
     text-align: right;
-    font-size: 18px;
+    font-size: 16px;
   }
   .Texto-Menu:hover {
     text-decoration: underline;
@@ -136,6 +132,9 @@ h2 {
     text-decoration: none;
     color: white;
   }
+  .Texto-Footer:hover {
+    text-decoration: underline;
+  }
   .logotipo-footer {
     display: flex;
     justify-content: center;
@@ -148,13 +147,53 @@ h2 {
     fill: #FFFFFF;
   }
   .Logo-Footer:hover {
-    height: 90px;
+    height: 85px;
     fill: #FFFFFF;
     transition: all 0.2s;
   }
-  .SM-Logo-Footer {
+  .rrss-footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0px;
+  }
+  #jof-Behance {
+    height: 34.84px;
+    width: auto;
+  }
+  #jof-Linkedin {
+    height: 40.81px;
+    width: auto;
+  }
+  .BoxSocial-Behance {
+    border: 1px solid #ffffff;
     height: 64px;
-    padding-left: 24px;
+    width: 68px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .BoxSocial-Behance:hover {
+    background-color: #005cff;
+    border: none;
+    transition: all 0.2s;
+  }
+  .BoxSocial-Linkedin {
+    border: 1px solid #ffffff;
+    height: 64px;
+    width: 68px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .BoxSocial-Linkedin:hover {
+    background-color: #0075b4;
+    border: none;
+    transition: all 0.2s;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -206,9 +245,49 @@ h2 {
     fill: #FFFFFF;
     transition: all 0.2s;
   }
-  .SM-Logo-Footer {
+  .rrss-footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0px;
+  }
+  #jof-Behance {
+    height: 34.84px;
+    width: auto;
+  }
+  #jof-Linkedin {
+    height: 40.81px;
+    width: auto;
+  }
+  .BoxSocial-Behance {
+    border: 1px solid #ffffff;
     height: 64px;
-    padding-left: 24px;
+    width: 68px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .BoxSocial-Behance:hover {
+    background-color: #005cff;
+    border: none;
+    transition: all 0.2s;
+  }
+  .BoxSocial-Linkedin {
+    border: 1px solid #ffffff;
+    height: 64px;
+    width: 68px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .BoxSocial-Linkedin:hover {
+    background-color: #0075b4;
+    border: none;
+    transition: all 0.2s;
   }
 }
 @media (max-width: 767px) {
@@ -246,11 +325,6 @@ h2 {
     height: 80px;
     fill: #FFFFFF;
   }
-  .SM-Logo-Footer {
-    height: 48px;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
   .enlaces-footer {
     order: 2;
   }
@@ -261,6 +335,48 @@ h2 {
   }
   .rrss-footer {
     order: 3;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 0px;
+  }
+  #jof-Behance {
+    height: 26.1px;
+    width: auto;
+  }
+  #jof-Linkedin {
+    height: 30.6px;
+    width: auto;
+  }
+  .BoxSocial-Behance {
+    border: 1px solid #ffffff;
+    height: 48px;
+    width: 51px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .BoxSocial-Behance:hover {
+    background-color: #005cff;
+    border: none;
+    transition: all 0.2s;
+  }
+  .BoxSocial-Linkedin {
+    border: 1px solid #ffffff;
+    height: 48px;
+    width: 51px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .BoxSocial-Linkedin:hover {
+    background-color: #0075b4;
+    border: none;
+    transition: all 0.2s;
   }
 }
 /*Fin Menu Inferior*/
@@ -369,7 +485,7 @@ h2 {
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .col {
@@ -503,10 +619,9 @@ h2 {
     align-items: center;
     justify-items: center;
     gap: 36px;
-    margin-left: 36px;
-    margin-right: 36px;
+    margin: auto;
     display: grid;
-    width: 100%;
+    width: 90%;
   }
   .Miniatura-Caja {
     position: relative;
@@ -809,10 +924,6 @@ h2 {
   }
   .ejem-box {
     border: 1px solid #212529;
-  }
-  .ejem-box:hover {
-    transform: translateY(-10px);
-    transition: 0.5s;
   }
   .s-ejem-img {
     position: relative;

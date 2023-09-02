@@ -38,11 +38,10 @@
         align-items: center;
         margin: auto;
         border: 1px solid $color-secundario;
-    }
-
-    .caja-marca:hover{
-        transform: translate(0px,-10px);
-        transition: 0.5s;
+        &:hover{
+            transform: translate(0px,-10px);
+            transition: 0.5s;
+        }
     }
     
     .descrip-marca{
@@ -69,10 +68,9 @@
         font-size: 19px;
         color: $color-secundario;
         text-decoration-line: underline;
-    }
-    
-    .Link-marca:hover{
-        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
     }
     
     .img-marca{
@@ -152,10 +150,9 @@
         font-size: 17px;
         color: $color-secundario;
         text-decoration-line: underline;
-    }
-    
-    .Link-marca:hover{
-        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
     }
     
     .img-marca{
@@ -210,10 +207,9 @@
         align-items: center;
         margin: 0px 20px 0px 20px;
         border: 1px solid $color-secundario;
-    }
-
-    .caja-marca:hover{
-        transform: translate(0px,-20px);
+        &:hover{
+            transform: translate(0px,-20px);
+        }
     }
     
     .descrip-marca{
@@ -241,10 +237,9 @@
         font-size: 16px;
         color: $color-secundario;
         text-decoration-line: underline;
-    }
-    
-    .Link-marca:hover{
-        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
     }
     
     .img-marca{

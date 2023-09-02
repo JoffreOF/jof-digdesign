@@ -54,10 +54,9 @@
         background-color: $color-secundario;
         color: $color-primario;
         font-size: 18px;
-    }
-    
-    .boton-envio:hover{
-        background-color: $color-hover;
+        &:hover{
+            background-color: $color-hover;
+        }
     }
 }
 
@@ -120,10 +119,9 @@
         background-color: $color-secundario;
         color: $color-primario;
         font-size: 18px;
-    }
-    
-    .boton-envio:hover{
-        background-color: $color-hover;
+        &:hover{
+            background-color: $color-hover;
+        }
     }
 }
 
@@ -186,10 +184,9 @@
         background-color: $color-secundario;
         color: $color-primario;
         font-size: 18px;
-    }
-    
-    .boton-envio:hover{
-        background-color: $color-hover;
+        &:hover{
+            background-color: $color-hover;
+        }
     }
 }
 

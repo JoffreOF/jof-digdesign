@@ -47,10 +47,9 @@
         font-size: 17px;
         color: $color-secundario;
         text-decoration-line: underline;
-    }
-    
-    .bt-curr-texto:hover{
-        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
     }
 }
 
@@ -106,10 +105,9 @@
         font-size: 17px;
         color: $color-secundario;
         text-decoration-line: underline;
-    }
-    
-    .bt-curr-texto:hover{
-        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
     }
 }
 
@@ -163,9 +161,8 @@
         font-size: 17px;
         color: $color-secundario;
         text-decoration-line: underline;
-    }
-    
-    .bt-curr-texto:hover{
-        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
     }
 }

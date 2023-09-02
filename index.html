@@ -7,9 +7,13 @@
     <link rel="shortcut icon" href="./assets/Isotipo-jof.svg" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <!-- Animaciones AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Hoja de estilo CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
     <title>jof - Inicio</title>
+    <meta name="description" content="Diseñamos experiencias digitales donde la usabilidad y la estética se fusionan en armonía. Diseño UX/UI. Desarrollo Web. Branding.">
+    <meta name="keywords" content="Diseño UX UI, Diseño UX, Diseño UI, Experiencia de Usuario, Interfaz de Usuario, Desarrollo Web, Branding, Diseño Digital, Diseño Gráfico, Creación de Webs">
 </head>
 <body class="body-jof">
     <!-- BS Nav bar Desktop -->
@@ -79,16 +83,15 @@
         </div>
     </section>
 
-
     <section class="sec-trabajos">
         <div class="trabajos-seccion">
             <div class="home-trabajos-titulo">
                 <h3 class="titulo-seccion-home">Algunos de mis trabajos</h3>
             </div>
             <div class="cajas-trabajos">
-                <div class="caja c-metro">
+                <div class="caja c-metro" data-aos="fade-up">
                     <div class="Miniatura-Caja">
-                        <a href="./paginas/servicios.html">
+                        <a href="./paginas/portafolio.html">
                             <img src="./assets/miniat/Min-Metropolitano.jpg" alt="Min-Metropolitano" class="img-caja">
                         </a>
                     </div>                                        
@@ -96,9 +99,9 @@
                     <p class="nom-sec-trabajos">Metropolitano</p>
                 </div>
         
-                <div class="caja c-recetips">
+                <div class="caja c-recetips" data-aos="fade-up">
                     <div class="Miniatura-Caja">
-                        <a href="./paginas/servicios.html">
+                        <a href="./paginas/portafolio.html">
                             <img src="./assets/miniat/Min-Recetips.jpg" alt="Min-Recetips" class="img-caja">
                         </a>
                     </div>                                        
@@ -106,9 +109,9 @@
                     <p class="nom-sec-trabajos">Recetips</p>
                 </div>
         
-                <div class="caja c-ctop1">
+                <div class="caja c-ctop1" data-aos="fade-up">
                     <div class="Miniatura-Caja">
-                        <a href="./paginas/servicios.html">
+                        <a href="./paginas/portafolio.html">
                             <img src="./assets/miniat/Min-Top1.jpg" alt="Min-Top1" class="img-caja">
                         </a>
                     </div>                                        
@@ -116,9 +119,9 @@
                     <p class="nom-sec-trabajos">Academias Top 1</p>
                 </div>
         
-                <div class="caja c-inn">
+                <div class="caja c-inn" data-aos="fade-up">
                     <div class="Miniatura-Caja">
-                        <a href="./paginas/servicios.html">
+                        <a href="./paginas/portafolio.html">
                             <img src="./assets/miniat/Min-Innpacto.jpg" alt="Min-Innpacto" class="img-caja">
                         </a>
                     </div>                                        
@@ -166,14 +169,17 @@
                     <img src="./assets/Isotipo-jof-neg.svg" alt="Isotipo jof" class="Logo-Footer">
                 </a>                
             </div>
-
             <div class="rrss-footer">
-                <a href="https://www.behance.net/joffreordinola" target="_blank">
-                    <img src="./assets/rrss/Behance.svg" alt="Mi Behance" class="SM-Logo-Footer">
-                </a>
-                <a href="https://www.linkedin.com/in/jordinolaflores/" target="_blank">
-                    <img src="./assets/rrss/Linkedin.svg" alt="Mi Linkedin" class="SM-Logo-Footer">
-                </a>                
+                    <a href="https://www.behance.net/joffreordinola" target="_blank">
+                        <div class="BoxSocial-Behance">
+                            <img src="./assets/rrss/jof-Behance.svg" alt="Mi Behance" id="jof-Behance">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jordinolaflores/" target="_blank">
+                        <div class="BoxSocial-Linkedin">
+                            <img src="./assets/rrss/jof-Linkedin.svg" alt="Mi Linkedin" id="jof-Linkedin">
+                        </div>
+                    </a>                                
             </div>
         </nav>
     </footer>
@@ -181,5 +187,10 @@
 
     <!-- Bootstrap JS -->
     <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
+    <!-- Animacion AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

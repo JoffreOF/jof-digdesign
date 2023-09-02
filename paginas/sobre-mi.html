@@ -7,9 +7,13 @@
     <link rel="shortcut icon" href="../assets/Isotipo-jof.svg" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!-- Animaciones AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Hoja de estilo CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>jof - Sobre mí</title>
+    <meta name="description" content="Soy Joffre Ordinola, diseñador digital con experiencia en UX/UI, desarrollo web y diseño gráfico. Trabajemos juntos">
+    <meta name="keywords" content="Diseño UX UI, Diseño UX, Diseño UI, Experiencia de Usuario, Interfaz de Usuario, Desarrollo Web, Branding, Diseño Digital, Diseño Gráfico, Creación de Webs">
 </head>
 <body class="body-jof">
     <!-- BS Nav bar Desktop -->
@@ -54,6 +58,7 @@
     <!-- BS Text -->
     <section class="sobre-mi-grid">
         <div class="col-sobremi">
+            <!-- Descripcion jof -->
             <div class="sobremi-bio">
                 <h3 class="head-bio">¡Hola! Soy Joffre</h3>
                     
@@ -74,7 +79,8 @@
                 </a>
             </div>
 
-            <div class="sobremi-img">
+            <!-- Imagen jof -->
+            <div class="sobremi-img" data-aos="fade-left">
                     <img src="../assets/foto/Head-JoffreOrdinola.jpg" class="head-joffre" alt="Joffre-Foto">
             </div>
         </div>           
@@ -119,14 +125,17 @@
                     <img src="../assets/Isotipo-jof-neg.svg" alt="Isotipo jof" class="Logo-Footer">
                 </a>                
             </div>
-
             <div class="rrss-footer">
-                <a href="https://www.behance.net/joffreordinola" target="_blank">
-                    <img src="../assets/rrss/Behance.svg" alt="Mi Behance" class="SM-Logo-Footer">
-                </a>
-                <a href="https://www.linkedin.com/in/jordinolaflores/" target="_blank">
-                    <img src="../assets/rrss/Linkedin.svg" alt="Mi Linkedin" class="SM-Logo-Footer">
-                </a>                
+                    <a href="https://www.behance.net/joffreordinola" target="_blank">
+                        <div class="BoxSocial-Behance">
+                            <img src="../assets/rrss/jof-Behance.svg" alt="Mi Behance" id="jof-Behance">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jordinolaflores/" target="_blank">
+                        <div class="BoxSocial-Linkedin">
+                            <img src="../assets/rrss/jof-Linkedin.svg" alt="Mi Linkedin" id="jof-Linkedin">
+                        </div>
+                    </a>                                
             </div>
         </nav>
     </footer>
@@ -134,5 +143,10 @@
 
     <!-- Bootstrap JS -->
     <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
+    <!-- Animacion AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
